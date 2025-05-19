@@ -3,7 +3,7 @@ import json
 def get_file():
     with open('q-vercel-python.json', 'r') as f:
         data = json.load(f)
-    print(data)
+    return data
 
 def handle_request(names):
     with open('q-vercel-python.json', 'r') as f:
