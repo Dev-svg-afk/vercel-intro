@@ -13,4 +13,5 @@ def handle_request(name):
         data = json.load(f)
     a = data[name[0]]
     b = data[name[1]]
-    return { "marks" : [a,b] }
+    # return { "marks" : [a,b] }
+    return { name[0] }
