@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print message
-        run: echo "Push successful! Wait for vercel to deploy..."
+        run: echo "Push successful! Vercel is building..."
