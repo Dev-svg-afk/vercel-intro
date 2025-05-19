@@ -9,4 +9,4 @@ def read_root():
 
 @app.get("/api")
 def read_index():
-    index.handle_request()
+    return index.handle_request()
