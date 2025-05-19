@@ -12,5 +12,5 @@ def handle_request(name):
     with open(file_path, 'r') as f:
         data = json.load(f)
     a = data[0]["marks"]
-    b = data[0]["marks"]
+    b = data[1]["marks"]
     return { "marks" : [a,b] }
