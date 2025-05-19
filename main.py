@@ -9,4 +9,4 @@ def read_root():
 
 @app.get("/api")
 def read_index(names: List[str] = Query(None)):
-    return index.get_file()
+    return {"message": "api!"}
