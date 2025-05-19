@@ -1,9 +1,10 @@
-# import json
+import json
 
 def get_file():
-    # with open('../q-vercel-python.json', 'r') as f:
-    #     data = json.load(f)
-    return { "hi" }
+    file_path = os.path.join(os.path.dirname(__file__), 'q-vercel-python.json')
+    with open(file_path, 'r') as f:
+        data = json.load(f)
+    return {"hi"}
 
 def handle_request(names):
     with open('q-vercel-python.json', 'r') as f:
