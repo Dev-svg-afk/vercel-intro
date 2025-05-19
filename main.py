@@ -9,5 +9,5 @@ def read_root():
     return {"message": "changed text!"}
 
 @app.get("/api")
-def read_index(names: List[str] = Query(None)):
-    return index.handle_request(names=names)
+def read_index(name: List[str] = Query(...)):
+    return index.handle_request(name=name)
