@@ -1,2 +1,2 @@
 def handle_request():
-    return 'Hello, world!'
+    return {'message':'Hello, world!'}
