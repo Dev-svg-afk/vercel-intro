@@ -14,4 +14,4 @@ def handle_request(name):
     # a = data[name[0]]
     # b = data[name[1]]
     # return { "marks" : [a,b] }
-    return { name[0] }
+    return { data[0] }
