@@ -3,8 +3,8 @@ name: Hello World
 on: [push]
 
 jobs:
-  say-hello:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print message
+      - name: 24f2003048@ds.study.iitm.ac.in
         run: echo "Push successful! Vercel is building..."
