@@ -19,5 +19,5 @@ def read_root():
     return {"message": "CORS is working!"}
 
 @app.get("/api")
-def read_index(name: List[str] = Query(...)):
+def read_index(name: List[str] = Query(None)):
     return index.handle_request(name=name)
