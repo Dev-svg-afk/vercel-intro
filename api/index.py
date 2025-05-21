@@ -8,5 +8,6 @@ def handle_request(name):
     if not name:
         marks = []
     else:
-        marks = [data[x]["marks"] for x in name]
-    return { "marks" : [marks] }
+        # marks = [data[0]["marks"] for x in name]
+        marks = data
+    return { "marks" : marks }
