@@ -7,7 +7,11 @@ def handle_request(name):
         data = json.load(f)
     if not name:
         marks = []
-    else:
-        for n in name:
-            marks.append(row["marks"] for row in data if row["name"] == n)
+    
+    for n in name:
+        for row in data:
+            if row["name"] == n:
+                marks.append(row["marks"])
+
+    
     return { "marks" : marks }
