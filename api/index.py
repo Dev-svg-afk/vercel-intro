@@ -9,5 +9,5 @@ def handle_request(name):
         marks = []
     else:
         # marks = [data[0]["marks"] for x in name]
-        marks = data
+        marks = data[0][name[0]]
     return { "marks" : marks }
