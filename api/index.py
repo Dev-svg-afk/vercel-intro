@@ -8,5 +8,6 @@ def handle_request(name):
     if not name:
         marks = []
     else:
-        marks = [ row["marks"] for row in data if row["name"] in name]
+        for n in name:
+            marks.append(row["marks"] for row in data if row["name"] == n)
     return { "marks" : marks }
