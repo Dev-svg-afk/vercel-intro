@@ -8,6 +8,5 @@ def handle_request(name):
     if not name:
         marks = []
     else:
-        # marks = [data[0]["marks"] for x in name]
-        marks = data[0]
+        marks = [ row["marks"] for row in data if row["name"] in name]
     return { "marks" : marks }
